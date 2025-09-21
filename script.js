@@ -29,10 +29,10 @@ function mostrarDatosClima (data) {
     ciudadTitulo.textContent = ciudadNombre
 
     const temperaturaInfo = document.createElement ('p')
-    temperaturaInfo.textContent = temperatura
+    temperaturaInfo.textContent = `La temperatura es ${Math.floor(temperatura-difKelvin)}°C`
 
     const descripcionInfo = document.createElement ('p')
-    descripcionInfo.textContent = descripcion
+    descripcionInfo.textContent = `Descripcion Meteorologiaca: ${descripcion}`
 
     divDatosClima.appendChild(ciudadTitulo)
     divDatosClima.appendChild(temperaturaInfo)
